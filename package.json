@@ -1,0 +1,24 @@
+{
+  "name": "meetup-api",
+  "version": "1.0.0",
+  "description": "meetup api wrapper",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "jshint ./",
+    "test": "npm run lint",
+    "test.mocha": "npm run lint && mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "chai": "^4.2.0",
+    "debug": "^4.1.0",
+    "iconv-lite": "^0.4.24",
+    "mocha": "^5.2.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.6"
+  }
+}
