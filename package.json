@@ -1,12 +1,15 @@
 {
-  "name": "meetup-api",
+  "name": "meetup-node",
   "version": "0.0.1",
   "description": "meetup api wrapper",
   "keywords": [
     "meetup",
     "meetup-node",
     "meetup-node-api",
-    "meetup-client"
+    "meetup-client",
+    "meetup-sdk",
+    "meetup-sdk",
+    "meetup Account API"
   ],
   "author": "Vijay Patoliya<osi.vijay@gmail.com>",
   "contributors": [
