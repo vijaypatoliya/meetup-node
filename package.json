@@ -1,15 +1,27 @@
 {
   "name": "meetup-api",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "meetup api wrapper",
+  "keywords": [
+    "meetup",
+    "meetup-node",
+    "meetup-node-api",
+    "meetup-client"
+  ],
+  "author": "Vijay Patoliya<osi.vijay@gmail.com>",
+  "contributors": [
+    "Vijay Patoliya (osi.vijay@gmail.com)"
+  ],
+  "engines": {
+    "node": ">= v0.10.0"
+  },
   "main": "lib/index.js",
   "scripts": {
     "lint": "jshint ./",
     "test": "npm run lint",
     "test.mocha": "npm run lint && mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.2",
     "chai": "^4.2.0",

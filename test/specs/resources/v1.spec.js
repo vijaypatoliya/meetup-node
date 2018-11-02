@@ -28,28 +28,28 @@ describe('Activity', function () {
   });
 });
 
-// describe('Comment', function () {
+ describe('Comment', function () {
 
-//   it('It should get Comment list ', async function () {
-//     var data = {
-//       group_id: 12
-//     };
+   it('It should get Comment list ', async function () {
+     var data = {
+       group_id: 12
+     };
 
-//     try {
-//       var response = await meetup.comment.getCommentItems(data).catch(error => {
-//         if (error) {
-//           console.log('error ', error);
-//           return;
-//         }
-//       });
-//       console.log('response', response);
-//       expect(response).to.be.a('object');
-//     } catch (error) {
-//       console.log('error ', error);
-//       expect(response).to.be.a(undefined);
-//     }
-//   });
-// });
+     try {
+       var response = await meetup.comment.getCommentItems(data).catch(error => {
+         if (error) {
+           console.log('error ', error);
+           return;
+         }
+       });
+       console.log('response', response);
+       expect(response).to.be.a('object');
+     } catch (error) {
+       console.log('error ', error);
+       expect(response).to.be.a(undefined);
+     }
+   });
+ });
 
 // describe('Oembed', function () {
 
@@ -74,24 +74,24 @@ describe('Activity', function () {
 //   });
 // });
 
-// describe('Topic', function () {
+ describe('Topic', function () {
 
-//   it('It should get Topic list ', async function () {
-//     var data = {};
+   it('It should get Topic list ', async function () {
+     var data = {};
 
-//     try {
-//       var response = await meetup.topic.getTopicItems(data).catch(error => {
-//         if (error) {
-//           console.log('error ', error);
-//           return;
-//         }
-//       });
-//       console.log('response', response);
-//       expect(response).to.be.a('object');
-//     } catch (error) {
-//       console.log('error ', error);
-//       expect(response).to.be.a(undefined);
-//     }
+     try {
+       var response = await meetup.topic.getTopicItems(data).catch(error => {
+         if (error) {
+           console.log('error ', error);
+           return;
+         }
+       });
+       console.log('response', response);
+       expect(response).to.be.a('object');
+     } catch (error) {
+       console.log('error ', error);
+       expect(response).to.be.a(undefined);
+     }
 
-//   });
-// });
+   });
+ });
