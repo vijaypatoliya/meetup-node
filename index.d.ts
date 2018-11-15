@@ -50,4 +50,4 @@ declare class meetupNodeClient {
 declare namespace meetupNodeClient {
 
 }
-export = meetupNodeClient; 
+export = meetupNodeClient;
