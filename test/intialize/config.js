@@ -1,3 +1,3 @@
 module.exports = {
-    clientSecret: process.env.MEETUP_SECRET
+    clientSecret: process.env.MEETUP_CLIENT_SECRET
 };
