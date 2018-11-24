@@ -10,20 +10,21 @@ var photosRequest = async function () {
   /**
    * passing parameters 
    * -------------------
-   * event_id
+   * urlname
+   * eventId
    * photo
-   * photo_album_id
    * 
    * (optional)
-   * await (If true, this ensures a response will not be returned until the upload is accessible)
-   * caption (Caption for the photo)
+   * await (Optional boolean parameter that will defer a request's a response until confirmation that photo is immediately displayable is received.)
+   * caption (Caption for the photo, Max length 255)
    */
+  var urlname = 'GDG_Surat';
+  var eventId = 256006529;
   var data = {
-    event_id: 256006529,
     photo: 'file'
   };
   try {
-    var response = await meetup.photos2.uploadEventPhoto(data);
+    var response = await meetup.photos3.uploadEventPhoto(urlname, eventId, data);
   } catch (error) {
     return;
   }

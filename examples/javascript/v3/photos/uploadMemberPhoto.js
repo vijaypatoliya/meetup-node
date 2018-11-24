@@ -10,20 +10,21 @@ var photosRequest = async function () {
   /**
    * passing parameters 
    * -------------------
-   * event_id
+   * memberId
    * photo
-   * photo_album_id
    * 
    * (optional)
-   * await (If true, this ensures a response will not be returned until the upload is accessible)
-   * caption (Caption for the photo)
+   * main
+   * await (Optional boolean parameter that, when set to true, will defer a request's a response until confirmation that photo is immediately displayable is received.)
+   * sync_photo
    */
+  var memberId = 256006529;
   var data = {
-    event_id: 256006529,
-    photo: 'file'
+    photo: 'file',
+    main: false
   };
   try {
-    var response = await meetup.photos2.uploadEventPhoto(data);
+    var response = await meetup.photos3.uploadMemberPhoto(memberId, data);
   } catch (error) {
     return;
   }
