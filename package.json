@@ -1,6 +1,6 @@
 {
   "name": "meetup-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "meetup api wrapper",
   "keywords": [
     "meetup",
