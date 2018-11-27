@@ -16,8 +16,11 @@ var preferencesRequest = async function () {
    */
   var urlname = 'GDG_Surat';
   var domain = 'gdg';
+  var data = {
+    name: 'test' // preference name
+  };
   try {
-    var response = await meetup.preferences.updatePreference(urlname, domain);
+    var response = await meetup.preferences.updatePreference(urlname, domain, data);
   } catch (error) {
     return;
   }

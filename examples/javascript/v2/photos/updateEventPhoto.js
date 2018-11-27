@@ -12,7 +12,7 @@ var photosRequest = async function () {
    * -------------------
    * caption (Caption for the photo)
    */
-  var eventPhotoId = 476304349,
+  var eventPhotoId = 476304349;
   var data = {
     caption: 'New Image'
   };

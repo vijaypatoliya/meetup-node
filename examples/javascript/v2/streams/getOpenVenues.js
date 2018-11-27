@@ -18,8 +18,9 @@ var streamsRequest = async function () {
    * since_mtime
    * trickle
    */
+  var data = {};
   try {
-    var response = await meetup.streams.getOpenVenues();
+    var response = await meetup.streams.getOpenVenues(data);
   } catch (error) {
     return;
   }

@@ -36,12 +36,12 @@ var membersRequest = async function () {
    * zip
    */
   var data = {
-    memberId: 266277924,
     city_id: 1018099, // pass city id here given id of surat // u can get cties id from /2/cities api
     add_topics: 18528 // pass topic id here given id of Foodie topic
   }
+  var memberId = '266277924',
   try {
-    var response = await meetup.members2.updateMember(data);
+    var response = await meetup.members2.updateMember(memberId, data);
   } catch (error) {
     return;
   }

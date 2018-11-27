@@ -29,7 +29,13 @@ var venuesRequest = async function () {
    * web_url
    */
   var urlname = 'GDG_Surat';
-  var data = {};
+  var data = {
+    address_1: 'Opp. Police Station, Station Main Rd, Surat, Gujarat 395006 · Surat',
+    city: 'surat',
+    country: 'IN',
+    state: 'GJ',
+    name: 'main uniq name'
+  };
   try {
     var response = await meetup.venues3.createMeetupVenue(urlname, data);
   } catch (error) {

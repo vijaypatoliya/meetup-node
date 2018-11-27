@@ -9,7 +9,7 @@ var meetup = require('../../../../lib')(clientSecret);
 var photosRequest = async function () {
   var eventPhotoId = 476304349;
   try {
-    var response = await meetup.members2.deleteEventPhoto(eventPhotoId);
+    var response = await meetup.photos2.deleteEventPhoto(eventPhotoId);
   } catch (error) {
     return;
   }
