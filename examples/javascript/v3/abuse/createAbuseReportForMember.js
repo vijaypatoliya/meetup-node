@@ -27,7 +27,7 @@ var abuseRequest = async function () {
     member_id: 266277924
   };
   try {
-    var response = await meetup.abuse.createAbuseReportForGroup(data);
+    var response = await meetup.abuse.createAbuseReportForMember(data);
   } catch (error) {
     return;
   }

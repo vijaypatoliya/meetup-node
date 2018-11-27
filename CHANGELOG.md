@@ -1,3 +1,8 @@
+0.0.4 November 24, 2018
+  - Added typescript examples
+  - Added all examples in readme.md
+  - Added all the test cases
+
 0.0.3 November 24, 2018
   - Initial release with V3 API
 

@@ -1,6 +1,6 @@
 {
   "name": "meetup-node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "meetup api wrapper",
   "keywords": [
     "meetup",
@@ -58,6 +58,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^10.12.10",
     "bluebird": "^3.5.2",
     "chai": "^4.2.0",
     "debug": "^4.1.0",

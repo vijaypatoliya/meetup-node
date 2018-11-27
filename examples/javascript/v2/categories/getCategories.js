@@ -22,7 +22,7 @@ var categoryRequest = async function () {
    */
   var data = {};
   try {
-    var response = await meetup.category.getCategories(data);
+    var response = await meetup.categories.getCategories(data);
   } catch (error) {
     return;
   }
