@@ -881,8 +881,9 @@ describe('IgnoreRecommendedGroups', function () {
 describe('SelfGroups', function () {
 
   it('It should get self groups ', async function () {
+    var data = {};
     try {
-      var response = await meetup.groups3.getSelfGroups().catch(error => {
+      var response = await meetup.groups3.getSelfGroups(data).catch(error => {
         if (error) {
           console.log('error ', error);
           return;
@@ -1426,8 +1427,11 @@ describe('UpdatePreference', function () {
   it('It should update preference ', async function () {
     var urlname = 'GDG_Surat';
     var domain = 'gdg';
+    var data = {
+      name: 'test' // preference name
+    };
     try {
-      var response = await meetup.preferences.updatePreference(urlname, domain).catch(error => {
+      var response = await meetup.preferences.updatePreference(urlname, domain, data).catch(error => {
         if (error) {
           console.log('error ', error);
           if (error[0].code == 'group_error' || error[0].code == 'domain_error' || error[0].code == 'authentication_error') { // Invalid group urlname || UnsupportedDomain || Authenticated member required

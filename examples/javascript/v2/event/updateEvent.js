@@ -29,7 +29,7 @@ var eventRequest = async function () {
   };
   var eventId = 256006529;
   try {
-    var response = await meetup.events2.createEvent(eventId, data);
+    var response = await meetup.events2.updateEvent(eventId, data);
   } catch (error) {
     return;
   }
